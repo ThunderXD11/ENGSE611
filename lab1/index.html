@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แนะนำตัว</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      background: #f2f2f2; 
+      margin: 0; 
+      padding: 20px; 
+    }
+    .card { 
+      max-width: 600px; 
+      margin: auto; 
+      background: white; 
+      padding: 20px; 
+      border-radius: 10px; 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+    }
+    img {
+      display: block;
+      margin: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ส่วน Header -->
+<header>
+  <h1>แนะนำตัว – นาย วรสิทธิ์ บุญยปรีดี</h1>
+</header>
+
+<nav>
+  <p>เมนู: <a href="#about">เกี่ยวกับฉัน</a> | <a href="#skill">ทักษะ</a> | <a href="#contact">ติดต่อ</a></p>
+</nav>
+
+<main>
+  <section class="card" id="about">
+
+    <!-- แสดงรูปภาพ + alt (เงื่อนไขข้อ 3) -->
+    <img src="images/209462423_6454991694526885_8382559312231093150_n.jpg" 
+         width="120" height="150"
+         alt="รูปโปรไฟร์">
+
+    <h2>ข้อมูลส่วนตัว</h2>
+    <p>ผมชื่อ นาย วรสิทธิ์ บุญยปรีดี</p>
+    <p>กำลังศึกษาที่ มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</p>
+
+
+    <section id="skill">
+      <h2>ทักษะ</h2>
+      <ul>
+        <li>HTML</li>
+        <li>C</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <h2>สิ่งที่ชอบ</h2>
+    <ul>
+        <li>🎮 เล่นเกม</li>
+        <li>🎵 ฟังเพลง</li>
+        <li>😴 นอน</li>
+        <li>🍜 หาอะไรกินอร่อย ๆ</li>
+    </ul>
+
+    <h2>ตารางเรียน </h2>
+
+    <table border="1" width="100%">
+      <tr>
+        <th colspan="2">ตารางเรียน</th>
+      </tr>
+      <tr>
+        <td>วันจันทร์</td>
+        <td>ENGSE101</td>
+      </tr>
+      <tr>
+        <td>วันอังคาร</td>
+        <td>ENGSE216 และ ENGSE503</td>
+      </tr>
+      <tr>
+        <td>วันพุธ</td>
+        <td>ENGSE611</td>
+      </tr>
+      <tr>
+        <td>วันพฤหัสบดี</td>
+        <td>ENGSE205 และ ENGSE204</td>
+      </tr>
+      <tr>
+        <td>วันศุกร์</td>
+        <td>ENGSE202</td>
+      </tr>
+    </table>
+
+    <h2>แบบฟอร์มติดต่อกลับ</h2>
+    <form>
+      <label>ชื่อ: </label><br>
+      <input type="text" name="fullname"><br><br>
+
+      <label>Email: </label><br>
+      <input type="email" name="email"><br><br>
+
+      <label>ข้อความ: </label><br>
+      <textarea name="message" rows="4"></textarea><br><br>
+
+      <button type="submit">ส่งข้อความ</button>
+    </form>
+
+    <h2>ติดต่อ</h2>
+    <p>Email: worasit.b2547@gmail.com</p>
+    <p>Tel: 081-267-7241</p>
+
+    <p>
+      ➤ Facebook: 
+      <a href="https://www.facebook.com/worasit.boonyapreedee">คลิกที่นี่</a>
+    </p>
+
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Worasit Boonyapridee</p>
+</footer>
+
+</body>
+</html>
