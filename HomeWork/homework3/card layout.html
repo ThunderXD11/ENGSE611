@@ -1,104 +1,69 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>แนะนำตัว</title>
+<meta charset="UTF-8">
+<title>Flexbox Cards</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#eef2f5;
+        padding:40px;
     }
 
-    h1 {
-      text-align: center;
+    /* Flexbox container */
+    .container{
+        display:flex;
+        gap:20px;
+        justify-content:center;
     }
 
-    table {
-      border-collapse: collapse;
-      width: 100%;
+    /* Card */
+    .card{
+        background:#ffffff;
+        width:250px;
+        padding:20px;
+        border-radius:10px;
+        box-shadow:0 4px 10px rgba(0,0,0,0.15);
+        text-align:center;
+        transition: transform 0.3s;
     }
 
-    th, td {
-      border: 1px solid black;
-      padding: 4px;
-      text-align: center;
+    /* Hover effect */
+    .card:hover{
+        transform: scale(1.05);
     }
-  </style>
+
+    h2{
+        margin-bottom:10px;
+        color:#333;
+    }
+
+    p{
+        color:#555;
+        font-size:14px;
+    }
+</style>
 </head>
+
 <body>
 
-<header>
-  <h1>แนะนำตัว</h1>
-</header>
+<div class="container">
+    <div class="card">
+        <h2>Card 1</h2>
+        <p>การ์ดใบที่หนึ่ง</p>
+    </div>
 
-<main>
-  <section id="about">
+    <div class="card">
+        <h2>Card 2</h2>
+        <p>การ์ดใบที่สอง</p>
+    </div>
 
-    <img src="images/209462423_6454991694526885_8382559312231093150_n.jpg"
-         width="120" height="150"
-         alt="รูปโปรไฟล์">
-
-    <h2>ข้อมูลส่วนตัว</h2>
-    <p>ผมชื่อ นาย วรสิทธิ์ บุญยปรีดี</p>
-    <p>กำลังศึกษาที่ มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</p>
-
-    <h2 id="skill">ทักษะ</h2>
-    <ul>
-      <li>HTML</li>
-      <li>C</li>
-      <li>JavaScript</li>
-    </ul>
-
-    <h2>ตารางเรียน</h2>
-    <table>
-      <tr>
-        <th colspan="2">ตารางเรียน</th>
-      </tr>
-      <tr>
-        <td>จันทร์</td>
-        <td>ENGSE101</td>
-      </tr>
-      <tr>
-        <td>อังคาร</td>
-        <td>ENGSE216 และ ENGSE503</td>
-      </tr>
-      <tr>
-        <td>พุธ</td>
-        <td>ENGSE611</td>
-      </tr>
-      <tr>
-        <td>พฤหัสบดี</td>
-        <td>ENGSE205 และ ENGSE204</td>
-      </tr>
-      <tr>
-        <td>ศุกร์</td>
-        <td>ENGSE202</td>
-      </tr>
-    </table>
-
-    <h2>แบบฟอร์มติดต่อ</h2>
-    <form>
-      <input type="text" placeholder="ชื่อ"><br><br>
-      <input type="email" placeholder="Email"><br><br>
-      <textarea rows="4" placeholder="ข้อความ"></textarea><br><br>
-      <button type="submit">ส่ง</button>
-    </form>
-
-    <h2 id="contact">ติดต่อ</h2>
-    <p>
-      Facebook:
-      <a href="https://www.facebook.com/worasit.boonyapreedee" target="_blank">
-        คลิกที่นี่
-      </a>
-    </p>
-
-  </section>
-</main>
-
-<footer>
-  <p>Worasit Boonyapridee</p>
-</footer>
+    <div class="card">
+        <h2>Card 3</h2>
+        <p>การ์ดใบที่สาม</p>
+    </div>
+</div>
 
 </body>
 </html>
